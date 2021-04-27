@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="item.css">
+<link href="mainpage.css" rel="stylesheet">
+<link href="websiteformat.css" rel="stylesheet">
+
+<body>
+
+<div class="header">
+  <center><a href="website.html"><img class="hero-image" src="Capture.JPG" alt="Architecture" width="250" height="100"></a><center>
+</div>
+
+<div class="navbar">
+  <div class="subnav">
+    <button class="subnavbtn">Flower Design</button>
+     <div class="subnav-content">
+       <a href="website2.html#flower">Anniversary</a>
+       <a href="website3.html#flower">Event</a>
+       <a href="website4.html#flower">Sympathy</a>
+       <a href="#flower">SilkFlower</a>
+     </div>
+  </div>
+       <a href="website.html#deliv">Delivery</a>
+       <a href="website.html#about">About Us</a>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<header id="flower">
+  <h2> Silk Flower </h2>
+
+  <div class="grid-container3">
+  <div class="grid-item3"><img src="k1.jpg" alt="Architecture" width="250" height="250"></div>
+  <div class="grid-item3"><img src="k2.jpg" alt="Architecture" width="250" height="250"></div>
+  <div class="grid-item3"><img src="k3.jpg" alt="Architecture" width="250" height="250"></div>
+  <div class="grid-item3"><img src="k4.jpg" alt="Architecture" width="250" height="250"></div>
+  <div class="grid-item3"><img src="k5.jpg" alt="Architecture" width="250" height="250"></div>
+  <div class="grid-item3"><img src="k6.jpg" alt="Architecture" width="250" height="250"></div>
+
+  <div class="grid-container1">
+    <div class="grid-item1"></div>
+  </div>
+  <div class="grid-container1">
+    <div class="grid-item1"></div>
+  </div>
+  <div class="grid-container1">
+    <div class="grid-item1"></div>
+  </div>
+  <div class="grid-container1">
+    <div class="grid-item1"></div>
+  </div>  <div class="grid-container1">
+      <div class="grid-item1"></div>
+    </div>
+    <div class="grid-container1">
+      <div class="grid-item1"></div>
+    </div>
+
+
+  <div class="footer">
+    <header id="about">
+    <div class="grid-container2">
+    <div class="grid-item2"></div>
+    <div class="grid-item2">Monday-Saturday: 8:00AM. - 6:00PM.</div>
+    <div class="grid-item2"></div>
+    <div class="grid-item2">eternalflowerto@gmail.com</div>
+    <div class="grid-item2"></div>
+    <div class="grid-item2">647)898-5624</div>
+    <div class="grid-item2"></div>
+  </div>
+</div>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

@@ -28,6 +28,8 @@
        <a href="#about">About Us</a>
   </div>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <div class="grid-container">
       <div class="grid-item item1"></div>
       <div class="grid-item item2"></div>
@@ -41,7 +43,7 @@
     <div class="heropagetitle">
       <h1 class="title">Bloom Your Happiness</h1>
       <span class="subtitle">Make your belonging happy with the fresh flower arrangments today!</span>
-      <a href="join.html" class="btn">View Flower</a>
+      <a href="website2.html" class="btn">View Flower</a>
     </div>
   </section>
 </header>
@@ -60,7 +62,7 @@
 								<h2>Anniversary</span></h2>
 								<p>Get the flower for your special day and one</p>
 							</div>
-							<a href="#">View more</a>
+							<a href="website2.html">View more</a>
 						</figcaption>
 					</figure>
 					<figure class="effect-lily">
@@ -70,7 +72,7 @@
 								<h2>Event</span></h2>
 								<p>Make your celebration special</p>
 							</div>
-							<a href="#">View more</a>
+							<a href="website3.html">View more</a>
 						</figcaption>
 					</figure>
           <figure class="effect-lily">
@@ -80,7 +82,7 @@
 								<h2>Sympathy</span></h2>
 								<p>For peace and farewell</p>
 							</div>
-							<a href="#">View more</a>
+							<a href="website4.html">View more</a>
 						</figcaption>
 					</figure>
 					<figure class="effect-lily">
@@ -90,7 +92,7 @@
 								<h2>Silk Flower</h2>
 								<p>Keep your special moment eternally</p>
 							</div>
-							<a href="#">View more</a>
+							<a href="website5.html">View more</a>
 						</figcaption>
 					</figure>
 		</div>
@@ -191,7 +193,27 @@
   </div>
 </div>
 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>
