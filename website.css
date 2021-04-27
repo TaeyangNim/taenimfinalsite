@@ -5,64 +5,20 @@
 	font-size: 1em;
 	font-family: 'Raleway', Arial, sans-serif;
 }
-.grid-container {
-  display: grid;
-  grid-gap: 10px;
-  background-color: white;
-  padding: 10px;
-}
 
-.grid-item {
-  background-color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
-}
 
-.item1 {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.item2 {
-  grid-column: 3;
-  grid-row: 1 / span 2;
-}
-
-.item41 {
-  background-color: #2F303A;
-}
-
-.item4 {
-  background-color: white;
-
-}
-
-.item5 {
-  grid-column: 1 / span 3;
-  grid-row: 3;
-}
-
-.grid-container1 {
-  display: grid;
-
-  grid-template-columns: auto auto auto auto auto auto;
-  background-color: white;
-  padding: 10px;
-}
-.grid-item1 {
-  background-color: white;
-
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
 body {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
+p {
+  text-align: left;
+  line-height: 30px;
+  color: white;
+
+}
 .title {
   font-weight: 500;
   font-size: 2em;
@@ -163,6 +119,16 @@ body {
 
 .subnav:hover .subnav-content {
   display: block;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #424451;
+   color: white;
+   text-align: center;
 }
 
 @media screen and (max-width: 400px) {

@@ -1,11 +1,11 @@
-.home-main-section {
+.homeformat {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   flex-grow: 1;
 }
 
-.home-main-section .img-wrapper {
+.homeformat .img-wrapper {
   flex-grow: 1;
   flex-direction: column;
   display: flex;
@@ -13,17 +13,17 @@
   justify-content: flex-end;
 }
 
-.home-main-section .lady-image {
+.homeformat .flowerimage {
   background-image: url(flower.png);
   flex-grow: 1;
-  max-height: 70vh;
+
   min-width: 30vw;
-  background-size: contain;
+  background-size: 350px;
   background-repeat: no-repeat;
   background-position: bottom left;
 }
 
-.home-main-section .call-to-action {
+.homeformat .heropagetitle {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -31,12 +31,56 @@
   align-self: center;
 }
 
+
+.aboutformat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.adtext {
+  font-size: 3em;
+  font-weight: bold;
+
+}
+
+.colortext {
+  color: #BC3A80;
+}
+
+
+.greybox {
+  background-color: #202027;
+  width: 50vw;
+  max-width: 50%;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+
+
+
 @media (max-width: 900px) {
-  .home-main-section .img-wrapper {
+  .aboutformat {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+@media (max-width: 900px) {
+  .homeformat .img-wrapper {
     display: none;
   }
 
-  .home-main-section {
+  .homeformat {
     justify-content: center;
   }
+}
+
+.greybox {
+  width: 80vw;
+  max-width: inherit;
+  margin: 2rem 0;
+}
 }
